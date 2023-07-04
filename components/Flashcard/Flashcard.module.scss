@@ -1,0 +1,75 @@
+.flashcard {
+    flex-basis: 300px;
+    aspect-ratio: 16 / 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.6;
+
+    .back {
+        display: none;
+    }
+
+    &.unlearned {
+        opacity: 0.6;
+        background-color: #f0caca;
+    }
+    &.learned {
+        opacity: 0.3;
+        background-color: #bcefbc;
+    }
+
+    // Focus on active
+    &.active {
+        opacity: 1;
+    }
+}
+
+.flipped {
+    .front {
+        display: none;
+    }
+
+    .back {
+        display: block;
+    }
+}
+
+.card {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .side {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .word {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hint {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+}
