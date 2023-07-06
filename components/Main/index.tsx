@@ -5,20 +5,20 @@ import Flashcard from '../Flashcard';
 import { Controls } from '../Controls';
 
 import styles from './Main.module.scss'
-import { Definition } from '@/types/definition';
+import { Exercise } from '@/types/types';
 
-export default function Main({ data }: { data: Definition[] }) {
+export default function Main({ data }: { data: Exercise[] }) {
     const [active, setActive] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
   
-    const [definitions, setDefinitions] = useState(data!);
+    const [exercises, setExercises] = useState(data!);
   
     const flip = () => {
       setIsFlipped(!isFlipped);
     }
   
     const next = () => {
-      const max = definitions.length - 1;
+      const max = exercises.length - 1;
   
       if (active < max) {
         setActive(active + 1);
@@ -28,7 +28,7 @@ export default function Main({ data }: { data: Definition[] }) {
     }
   
     const prev = () => {
-      const max = definitions.length - 1;
+      const max = exercises.length - 1;
   
       if (active > 0) {
         setActive(active - 1);
@@ -37,42 +37,34 @@ export default function Main({ data }: { data: Definition[] }) {
       }
     }
   
-    const updateStatus = (status: "unlearned" | "learning" | "learned") => {
-      const newDefinitions = [...definitions];
-      newDefinitions[active].status = status;
+    const updateStatus = (status: "unlearned" | "learning" | "learned", card?: number) => {
+      const newExercises = [...exercises];
+      newExercises[card ?? active].status = status;
   
-      setDefinitions(newDefinitions);
+      setExercises(newExercises);
     }
   
   
     useEffect(() => {
       const handleKeyPress = (event: KeyboardEvent) => {
         // If cmd or ctrl key is pressed, don't do anything
-        if (event.metaKey || event.ctrlKey) {
-          return;
-        }
+        if (event.metaKey || event.ctrlKey) return;
         event.preventDefault();
 
-        if (event.key === ' ') {
+        if (event.key === ' ') 
           flip();
-        }
-        else if (event.key === 'ArrowRight' || event.key === 'Tab') {
+        else if (event.key === 'ArrowRight' || event.key === 'Tab') 
           next();
-        }
-        else if (event.key === 'ArrowLeft') {
+        else if (event.key === 'ArrowLeft')
           prev();
-        }
-        else if (event.key === '1', event.key === 'Backspace') {
+        else if (event.key === '1', event.key === 'Backspace')
           changeCard('unlearned');
-        }
-        else if (event.key === '2') {
+        else if (event.key === '2')
           changeCard('learning');
-        }
-        else if (event.key === '3' || event.key === 'Enter') {
+        else if (event.key === '3' || event.key === 'Enter')
           changeCard('learned');
-        } else if (event.key === 's') {
+        else if (event.key === 's')
           shuffle();
-        }
       };
   
       // Attach the event listener to the document
@@ -88,21 +80,15 @@ export default function Main({ data }: { data: Definition[] }) {
       setIsFlipped(false);
   
       // Check if all cards are learned
-      if (hasLearnedAll()) {
-        reset();
-      }
+      if (hasLearnedAll()) reset();
       
-      if (definitions[active].status === 'unlearned') {
-        updateStatus('learning');
-      }
+      if (exercises[active].status === 'unlearned') updateStatus('learning');
 
-      if (definitions[active].status === 'learned') {
-        next();
-      }
+      if (exercises[active].status === 'learned') next();
     }, [active]);
   
     const hasLearnedAll = () => {
-      return definitions.every((definition) => definition.status === 'learned');
+      return exercises.every((definition) => definition.status === 'learned');
     }
   
     const changeCard = (string: "unlearned" | "learning" | "learned") => {
@@ -111,39 +97,53 @@ export default function Main({ data }: { data: Definition[] }) {
     }
   
     const shuffle = () => {
-      const newDefinitions = [...definitions];
-      newDefinitions.sort(() => Math.random() - 0.5);
+      const newExercises = [...exercises];
+      newExercises.sort(() => Math.random() - 0.5);
   
-      setDefinitions(newDefinitions);
+      setExercises(newExercises);
     }
   
     const reset = () => {
-      const newDefinitions = [...definitions];
-      newDefinitions.forEach((definition) => {
+      const newExercises = [...exercises];
+      newExercises.forEach((definition) => {
         definition.status = 'unlearned';
       });
   
-      setDefinitions(newDefinitions);
+      setExercises(newExercises);
     }
+
+    const onCardClick = (card: number) => {
+      // TODO: fix this code
+      const newExercises = [...exercises];
+      if (newExercises[card].status === 'learned') {
+        newExercises[card].status = 'learning';
+      }
+
+      setExercises(newExercises);
+
+      setActive(card);
+    }
+
   
     return (
       <div className={styles.container}>
         <div className={styles.flashcards}>
           {/* .filter((definition) => definition.status !== 'learned') */}
-          {definitions.map((definition, i) => (
+          {exercises.map((definition, i) => (
             <Flashcard key={i} definition={definition} 
-              onClick={() => setActive(i)}
+              onClick={() => onCardClick(i)}
               flip={flip}
               isActive={i === active} 
               isFlipped={active === i && isFlipped} />
           ))}
         </div>
-        {/* Update status and go to next */}
-        <Controls onChange={changeCard}
-        onSkip={next} 
-        onShuffle={shuffle}
-        onReset={reset}
-        />
+        <div className={styles.controls}>
+          <Controls onChange={changeCard}
+          onSkip={next} 
+          onShuffle={shuffle}
+          onReset={reset}
+          />
+        </div>
       </div>
     )
   }

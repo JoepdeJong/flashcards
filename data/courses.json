@@ -1,0 +1,27 @@
+[
+    {
+        "id": "al-kitaab",
+        "name": "Al-Kitaab",
+        "lessons": [
+            {
+                "id": "al-kitaab-1",
+                "title": "Al Kitaab 1",
+                "filename": "al-kitaab-1.csv"
+            },
+            {
+                "id": "al-kitaab-2",
+                "title": "Al Kitaab 2",
+                "filename": "al-kitaab-2.csv"
+            },
+            {
+                "id": "al-kitaab-4",
+                "title": "Al Kitaab 4",
+                "filename": "al-kitaab-4.csv"
+            }
+        ],
+        "mapping": {
+            "front": [{"word": "English"}],
+            "back": [{"word": "Arabic", "hint": "Pronounciation"}]
+        }
+    }
+]

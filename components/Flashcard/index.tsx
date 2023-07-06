@@ -4,7 +4,7 @@
 import { useRef, useState } from "react";
 
 import styles from './Flashcard.module.scss'
-import { Definition, Word } from "@/types/definition";
+import { Definition, Word } from "@/types/types";
 
 type FlashcardProps = {
     definition: Definition;
