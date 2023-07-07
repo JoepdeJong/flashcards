@@ -1,3 +1,4 @@
+import { CourseList } from '@/components/ListItem/CourseList';
 import { Course } from '@/types/types';
 
 export default async function Home() {
@@ -9,18 +10,7 @@ export default async function Home() {
   
   return (
     <div>
-      {courses.map((course) => (
-        <div key={course.id}>
-          <h2>{course.name}</h2>
-          <ul>
-            {course.lessons.map((lesson) => (
-              <li key={lesson.id}>
-                <a href={`/lesson/${course.id}/${lesson.id}`}>{lesson.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <CourseList courses={courses!} />
     </div>
   )
 }
