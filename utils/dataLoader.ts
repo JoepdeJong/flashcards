@@ -91,7 +91,14 @@ export const getCourseById = async (courseId: string): Promise<Course> => {
 export const getLessonById = async (courseId: string, lessonId: string): Promise<Lesson> => {
     const course = await getCourseById(courseId);
 
-    let lesson = course.lessons.find(lesson => lesson.id === lessonId);
+    if (!course.lessons) {
+        throw new Error(`Course ${courseId} has no lessons.`);
+    }
+
+    const lessons = course.lessons as  Array<Lesson | CSVLesson>;
+
+    let lesson = lessons.find(lesson => lesson.id === lessonId);
+    // .find(lesson => lesson.id === lessonId);
 
     if (!lesson) {
         throw new Error(`Lesson ${lessonId} not found.`);

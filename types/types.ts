@@ -19,7 +19,7 @@ export type Word = {
 export type Course = {
     id: string,
     name: string,
-    lessons: Lesson[] | CSVLesson[],
+    lessons:  Array<Lesson | CSVLesson>,
     mapping: CourseMapping
 }
 
