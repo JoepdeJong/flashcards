@@ -9,7 +9,8 @@ export const loadDefinitionsFromCSV = async (mapping: CourseMapping, csvLesson: 
 
     const promise = new Promise((resolve, reject) => {
         // Process rows as numbers do not use headers option
-        fs.createReadStream(`data/${csvLesson.filename}`)
+
+        fs.createReadStream(`public/data/${csvLesson.filename}`)
           .pipe(csv())
           .on('data', (row) => {
             row = Object.assign({}, row);
@@ -68,7 +69,7 @@ export const loadDefinitionsFromCSV = async (mapping: CourseMapping, csvLesson: 
     return definitions;
 }
 
-import courseData from "@/data/courses.json";
+import courseData from "@/public/data/courses.json";
 
 export const getCourses = async (): Promise<Course[]> => {
     const courses = courseData as Course[];
