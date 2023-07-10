@@ -4,14 +4,15 @@
 import { useRef, useState } from "react";
 
 import styles from './Flashcard.module.scss'
-import { Definition, Word } from "@/types/types";
+import { Exercise, Word } from "@/types/types";
 
 type FlashcardProps = {
-    definition: Definition;
+    exercise: Exercise;
     isFlipped?: boolean;
     isActive?: boolean;
     onClick?: () => void;
     flip?: () => void;
+    showHint?: boolean;
 };
 
 export default function Flashcard(props: FlashcardProps) {
@@ -32,26 +33,26 @@ export default function Flashcard(props: FlashcardProps) {
     }
 
     return (
-        <div className={`${styles.flashcard} ${props.isActive ? styles.active : ''} ${styles[props.definition.status]}`} onClick={onClickCard} tabIndex={0} ref={cardRef}>
+        <div className={`${styles.flashcard} ${props.isActive ? styles.active : ''} ${styles[props.exercise.status]}`} onClick={onClickCard} tabIndex={0} ref={cardRef}>
             <div className={`${styles.card} ${props.isFlipped ? styles.flipped : ''}`}>
                 <div className={`${styles.front}`}>
-                    <Side words={props.definition.front} />
+                    <Side words={props.exercise.front} showHint={props.showHint} />
                 </div>
                 <div className={`${styles.back}`}>
-                    <Side words={props.definition.back} />
+                    <Side words={props.exercise.back}  showHint={props.showHint} />
                 </div>
             </div>
         </div>
     );
 }
 
-const Side = ({ words }: { words: Word[] }) => {
+const Side = ({ words, showHint }: { words: Word[], showHint?: boolean }) => {
     return (
         <div className={styles.side}>
             {words.map((word, i) => (
                 <div key={i} className={styles.word}>
                     {word.word}
-                    {word.hint && <span className={styles.hint}>{word.hint}</span>}
+                    {showHint && word.hint && <span className={styles.hint}>{word.hint}</span>}
                 </div>
             ))}
         </div>

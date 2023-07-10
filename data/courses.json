@@ -23,5 +23,21 @@
             "front": [{"word": "English"}],
             "back": [{"word": "Arabic", "hint": "Pronounciation"}]
         }
+    },
+    {
+        "id": "verbs",
+        "name": "Verbs",
+        "lessons": [
+            {
+                "id": "verbs-1",
+                "title": "Simple verbs",
+                "filename": "verbs.csv"
+            }
+        ],
+        "mapping": {
+            "front": [{"word": "Translation"}],
+            "back": [{"word": "Active Present", "hint": "Transliteration Present"}, {"word": "Active Past", "hint": "Transliteration Past"}]
+            
+        }
     }
 ]
