@@ -36,8 +36,27 @@
         ],
         "mapping": {
             "front": [{"word": "Translation"}],
-            "back": [{"word": "Active Present", "hint": "Transliteration Present"}, {"word": "Active Past", "hint": "Transliteration Past"}]
-            
+            "back": [{"word": "Active Present", "hint": "Transliteration Present"}, {"word": "Active Past", "hint": "Transliteration Past"}] 
+        }
+    },
+    {
+        "id": "other",
+        "name": "Other",
+        "lessons": [
+            {
+                "id": "directions",
+                "title": "Directions",
+                "filename": "directions.csv"
+            },
+            {
+                "id": "times",
+                "title": "Times",
+                "filename": "times.csv"
+            }
+        ],
+        "mapping": {
+            "front": [{"word": "English"}],
+            "back": [{"word": "Arabic", "hint": "Transliteration"}]
         }
     }
 ]
