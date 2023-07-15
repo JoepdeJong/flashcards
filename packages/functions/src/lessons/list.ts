@@ -1,4 +1,4 @@
-import { ApiHandler } from "sst/node/api";
+import { ApiHandler, usePathParam } from "sst/node/api";
 
 import { DynamoDB } from "aws-sdk";
 import { Table } from "sst/node/table";
@@ -7,6 +7,7 @@ import { checkAuthenticationToken } from "src/middleware/checkAuthenticationToke
 const dynamoDb = new DynamoDB.DocumentClient();
 
 export const main = ApiHandler(async (_evt) => {
+  
   // Check if user is authenticated
   const isAuthenticated = checkAuthenticationToken();
 
@@ -17,20 +18,24 @@ export const main = ApiHandler(async (_evt) => {
     };
   }
 
-  // Get all courses
-  const getCoursesParams = {
+  // Get path parameters
+  const courseId = usePathParam("courseId");
+
+  // Get all lessons for a course
+  const getLessonsParams = {
     TableName: Table.db.tableName,
-    FilterExpression: "begins_with(PK, :pk) AND begins_with(SK, :sk)",
+    FilterExpression: "PK = :pk AND begins_with(SK, :sk)",
     ExpressionAttributeValues: {
-      ":pk": "COURSE#",
-      ":sk": "USER#",
+      ":pk": `COURSE#${courseId}`,
+      ":sk": "LESSON#",
     },
-    ProjectionExpression: "courseId, userId, title",
+    ProjectionExpression: "courseId, lessonId, title, exercises",
   };
 
-  const courses = await dynamoDb.scan(getCoursesParams).promise();
+  const lessons = await dynamoDb.scan(getLessonsParams).promise();
+
   return {
     statusCode: 200,
-    body: JSON.stringify(courses.Items),
+    body: JSON.stringify(lessons.Items),
   };
 });

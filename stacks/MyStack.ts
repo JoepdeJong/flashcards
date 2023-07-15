@@ -23,7 +23,9 @@ export function Flashcards({ stack, app }: StackContext) {
     routes: {
       "GET /courses": "packages/functions/src/courses/list.main",
       "POST /courses": "packages/functions/src/courses/create.main",
-      // "GET /courses/{courseId}": "packages/functions/src/courses.get",
+      "GET /courses/{courseId}": "packages/functions/src/courses/show.main",
+      "GET /courses/{courseId}/lessons": "packages/functions/src/lessons/list.main",
+      "POST /courses/{courseId}/lessons": "packages/functions/src/lessons/create.main",
     },
     defaults: {
       function: {

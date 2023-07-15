@@ -58,8 +58,8 @@ export const main = ApiHandler(async (_evt) => {
           [Table.db.tableName]: chunk.map((item) => ({
             PutRequest: {
               Item: {
-                PK: `user#${item.userId}`,
-                SK: `course#${item.courseId}`,
+                PK: `COURSE#${item.courseId}`,
+                SK: `USER#${item.userId}`,
                 ...item,
               },
             },
