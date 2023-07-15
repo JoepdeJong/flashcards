@@ -1,0 +1,184 @@
+[
+    {
+      "front": "English",
+      "back": "Arabic",
+      "back_hint": "Pronunciation",
+      "Lesson": "1"
+    },
+    {
+      "front": "vocabulary words",
+      "back": "المُفْرَدَات",
+      "back_hint": "al mofradat"
+    },
+    {
+      "front": "(one) vocabulary word",
+      "back": "المُفْرَد",
+      "back_hint": "al mofrad"
+    },
+    {
+      "front": "\"formal, written (classical) Arabic\"",
+      "back": "الفُصْحَى",
+      "back_hint": "al fusha"
+    },
+    {
+      "front": "grammar",
+      "back": "القَوَاعِد",
+      "back_hint": "al qawa'id"
+    },
+    {
+      "front": "sentence",
+      "back": "جُمْلَة",
+      "back_hint": "jumla"
+    },
+    {
+      "front": "culture",
+      "back": "الثَّقَافَة",
+      "back_hint": "aththaqafa"
+    },
+    {
+      "front": "literature",
+      "back": "الأَدَب",
+      "back_hint": "al adab"
+    },
+    {
+      "front": "really?",
+      "back": "واللهِ؟",
+      "back_hint": "wallah"
+    },
+    {
+      "front": "United Nations",
+      "back": "الأُمَم المُتَّحِدَة",
+      "back_hint": "al umam al muttahida"
+    },
+    {
+      "front": "which?",
+      "back": "أَيّ؟",
+      "back_hint": "ayy"
+    },
+    {
+      "front": "nationality",
+      "back": "جِنْسِيَّة",
+      "back_hint": "jinsiyya"
+    },
+    {
+      "front": "I study",
+      "back": "أَدْرُس",
+      "back_hint": "adrus"
+    },
+    {
+      "front": "\"I live, reside\"",
+      "back": "أَسْكُن",
+      "back_hint": "askun"
+    },
+    {
+      "front": "\"she lives (also, you masc. live)\"",
+      "back": "تَسْكُن",
+      "back_hint": "taskun"
+    },
+    {
+      "front": "he resides",
+      "back": "يَسْكُن",
+      "back_hint": "yaskun"
+    },
+    {
+      "front": "year",
+      "back": "سَنَة",
+      "back_hint": "sana"
+    },
+    {
+      "front": "really? For real?",
+      "back": "صَحِيح؟!",
+      "back_hint": "sahih"
+    },
+    {
+      "front": "age",
+      "back": "عُمْر",
+      "back_hint": "umr"
+    },
+    {
+      "front": "\"she works (also, you masc. work)\"",
+      "back": "تَعْمَل",
+      "back_hint": "ta'mal"
+    },
+    {
+      "front": "he works",
+      "back": "يَعْمَل",
+      "back_hint": "ya'mal"
+    },
+    {
+      "front": "address",
+      "back": "عُنْوَان",
+      "back_hint": "'unwan"
+    },
+    {
+      "front": "Egyptian",
+      "back": "مِصْرِيّ / مِصْرِيَّة",
+      "back_hint": "misriyya"
+    },
+    {
+      "front": "who?",
+      "back": "مَن؟",
+      "back_hint": "man?"
+    },
+    {
+      "front": "\"area, region\"",
+      "back": "مِنْطَقَة",
+      "back_hint": "mintaqa"
+    },
+    {
+      "front": "the same",
+      "back": "نَفْس الــــ",
+      "back_hint": "nafs al"
+    },
+    {
+      "front": "the same university",
+      "back": "نَفْس الجَامِعَة",
+      "back_hint": "nafs al jami'a"
+    },
+    {
+      "front": "father",
+      "back": "وَالِد",
+      "back_hint": "walid"
+    },
+    {
+      "front": "my father",
+      "back": "وَالِدِي",
+      "back_hint": "walidi"
+    },
+    {
+      "front": "mother",
+      "back": "وَالِدَة",
+      "back_hint": "walida"
+    },
+    {
+      "front": "my mother",
+      "back": "وَالِدَتِي",
+      "back_hint": "walidati"
+    },
+    {
+      "front": "What? (Question without verb)",
+      "back": "ما؟",
+      "back_hint": "ma?"
+    },
+    {
+      "front": "What? (Question with verb)",
+      "back": "ماذا؟",
+      "back_hint": "madha?"
+    },
+    {
+      "front": "Which?",
+      "back": "أيّ؟",
+      "back_hint": "ayy?"
+    },
+    {
+      "front": "Where?",
+      "back": "أينَ",
+      "back_hint": "ayna?"
+    },
+    {
+      "front": "How?",
+      "back": "كَيف",
+      "back_hint": "kayfa?"
+    }
+  ]
+  

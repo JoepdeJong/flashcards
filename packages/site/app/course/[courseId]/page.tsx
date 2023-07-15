@@ -16,3 +16,13 @@ export default async function LessonPage({params}: {params: { courseId: string }
     </div>
   )
 }
+
+// // This function gets called at build time
+export async function generateStaticParams() {
+  const fetcher = (url: string) => fetch(url).then((res) => res.json())
+  const courses = await fetcher(process.env.NEXT_PUBLIC_API_URL + `/courses`) as CourseType[];
+
+  return courses.map((course) => ({
+    courseId: course.courseId
+  }))
+}

@@ -1,4 +1,5 @@
 import Main from '@/components/Main';
+import { CourseType } from '@flashcards/core/types/CoureType';
 import { LessonType } from '@flashcards/core/types/LessonType';
 
 export default async function LessonPage({params}: {params: { courseId: string, lessonId: string }}){
@@ -9,4 +10,22 @@ export default async function LessonPage({params}: {params: { courseId: string, 
   if (!lesson.exercises) return <h2>Loading...</h2>
   
   return <Main data={lesson.exercises} />
+}
+
+// // This function gets called at build time
+export async function generateStaticParams() {
+  const fetcher = (url: string) => fetch(url).then((res) => res.json())
+  const courses = await fetcher(process.env.NEXT_PUBLIC_API_URL + `/courses`) as CourseType[];
+
+  let courseLessons: {courseId: string, lessonId: string}[] = [];
+
+  courses.forEach((course) => {
+    if (course.lessons) {
+      course.lessons.forEach((lesson) => {
+        courseLessons.push({courseId: course.courseId, lessonId: lesson.lessonId})
+      })
+    }
+  })
+
+  return courseLessons;
 }
