@@ -11,6 +11,7 @@ export default function Main({ data }: { data: ExerciseType[] }) {
     const [active, setActive] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [showHint, setShowHint] = useState(false);
+    const [isIsolated, setIsIsolated] = useState(false);
   
     const [exercises, setExercises] = useState(data!);
   
@@ -130,7 +131,9 @@ export default function Main({ data }: { data: ExerciseType[] }) {
       <div className={styles.container}>
         <div className={styles.flashcards}>
           {/* .filter((definition) => definition.status !== 'learned') */}
-          {exercises.map((exercise, i) => (
+          {exercises.map((exercise, i) => {
+            if (isIsolated && i !== active) return null;
+            return (
             <Flashcard key={i} exercise={exercise} 
               onClick={() => onCardClick(i)}
               flip={flip}
@@ -138,7 +141,7 @@ export default function Main({ data }: { data: ExerciseType[] }) {
               isFlipped={active === i && isFlipped} 
               showHint={showHint}
               />
-          ))}
+          )})}
         </div>
         <div className={styles.controls}>
           <Controls onChange={changeCard}
@@ -146,6 +149,7 @@ export default function Main({ data }: { data: ExerciseType[] }) {
           onShuffle={shuffle}
           onReset={reset}
           onToggle={() => setShowHint(!showHint)}
+          onIsolated={() => setIsIsolated(!isIsolated)}
           />
         </div>
       </div>

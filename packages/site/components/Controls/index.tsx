@@ -6,6 +6,7 @@ type ControlsProps = {
     onShuffle: () => void;
     onReset: () => void;
     onToggle: () => void;
+    onIsolated: () => void;
 };
 
 export const Controls = (props: ControlsProps) => {
@@ -23,6 +24,7 @@ export const Controls = (props: ControlsProps) => {
                 <button onClick={props.onShuffle} className={styles.shuffle}>🔀</button>
                 <button onClick={props.onReset} className={styles.reset}>🔄</button>
                 <button onClick={props.onToggle} className={styles.toggle}>👀</button>
+                <button onClick={props.onIsolated} className={styles.isolated}>🔍</button>
             </div>
         </div>
     )
