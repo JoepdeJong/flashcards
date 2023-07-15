@@ -2,20 +2,20 @@ import { ApiHandler } from "sst/node/api";
 
 import { DynamoDB } from "aws-sdk";
 import { Table } from "sst/node/table";
-import { checkAuthenticationToken } from "src/middleware/checkAuthenticationToken";
+// import { checkAuthenticationToken } from "src/middleware/checkAuthenticationToken";
 
 const dynamoDb = new DynamoDB.DocumentClient();
 
 export const main = ApiHandler(async (_evt) => {
-  // Check if user is authenticated
-  const isAuthenticated = checkAuthenticationToken();
+  // // Check if user is authenticated
+  // const isAuthenticated = checkAuthenticationToken();
 
-  if (!isAuthenticated) {
-    return {
-      statusCode: 401,
-      body: `Unauthorized`,
-    };
-  }
+  // if (!isAuthenticated) {
+  //   return {
+  //     statusCode: 401,
+  //     body: `Unauthorized`,
+  //   };
+  // }
 
   // Get all courses
   const getCoursesParams = {

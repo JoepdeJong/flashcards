@@ -1,4 +1,4 @@
-import { StackContext, Api, Table, Config } from "sst/constructs";
+import { StackContext, Api, Table, Config, NextjsSite } from "sst/constructs";
 
 export function Flashcards({ stack, app }: StackContext) {
   const stage = app.stage;
@@ -25,6 +25,7 @@ export function Flashcards({ stack, app }: StackContext) {
       "POST /courses": "packages/functions/src/courses/create.main",
       "GET /courses/{courseId}": "packages/functions/src/courses/show.main",
       "GET /courses/{courseId}/lessons": "packages/functions/src/lessons/list.main",
+      "GET /courses/{courseId}/lessons/{lessonId}": "packages/functions/src/lessons/show.main",
       "POST /courses/{courseId}/lessons": "packages/functions/src/lessons/create.main",
     },
     defaults: {
@@ -46,6 +47,6 @@ export function Flashcards({ stack, app }: StackContext) {
 
   stack.addOutputs({
     ApiEndpoint: api.url,
-    // SiteUrl: site.url,s
+    // SiteUrl: site.url
   });
 }

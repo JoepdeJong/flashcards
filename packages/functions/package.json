@@ -1,15 +1,18 @@
 {
-    "name": "@flashcards/functions",
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-      "test": "sst bind vitest",
-      "typecheck": "tsc -noEmit"
-    },
-    "devDependencies": {
-      "@types/aws-lambda": "^8.10.114",
-      "@types/node": "^18.15.11",
-      "sst": "^2.3.6"
-    }
+  "name": "@flashcards/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.11",
+    "@types/uuid": "^9.0.2",
+    "sst": "2.21.7"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
   }
-  
+}

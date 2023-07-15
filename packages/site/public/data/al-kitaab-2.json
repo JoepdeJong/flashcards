@@ -1,0 +1,338 @@
+[
+  {
+    "front": "family",
+    "back_hint": "usrat",
+    "back": "أُسْرَة",
+    "lesson": "2"
+  },
+  {
+    "front": "people",
+    "back_hint": "al nas",
+    "back": "النَّاس",
+    "lesson": "2"
+  },
+  {
+    "front": "also",
+    "back_hint": "aydan",
+    "back": "أَيْضًا",
+    "lesson": "2"
+  },
+  {
+    "front": "country",
+    "back_hint": "balad",
+    "back": "بَلَد",
+    "lesson": "2"
+  },
+  {
+    "front": "translation",
+    "back_hint": "at tarjama min / ila",
+    "back": "التَّرْجَمَة مِن / إلِى",
+    "lesson": "2"
+  },
+  {
+    "front": "translator",
+    "back_hint": "mutarjim / mutarjima",
+    "back": "مُتَرْجِم / مُتَرْجِمَة",
+    "lesson": "2"
+  },
+  {
+    "front": "specialist in",
+    "back_hint": "mutakhasis fi / mutakhasisa fi",
+    "back": "مُتَخَصِّص فِي /مُتَخَصِّصَة فِي",
+    "lesson": "2"
+  },
+  {
+    "front": "maternal aunt",
+    "back_hint": "khala",
+    "back": "خَالَة",
+    "lesson": "2"
+  },
+  {
+    "front": "always",
+    "back_hint": "daiman",
+    "back": "دَائِمًا",
+    "lesson": "2"
+  },
+  {
+    "front": "center",
+    "back_hint": "markaz",
+    "back": "مَرْكَز",
+    "lesson": "2"
+  },
+  {
+    "front": "the Middle East",
+    "back_hint": "ash sharq al awsat",
+    "back": "الشَرْق الأَوْسَط",
+    "lesson": "2"
+  },
+  {
+    "front": "busy (with)",
+    "back_hint": "mashghul / mashghula bi",
+    "back": "مَشْغُول / مَشْغُولَة بـِ",
+    "lesson": "2"
+  },
+  {
+    "front": "work",
+    "back_hint": "al 'amal / ash shughl",
+    "back": "العَمَل الشُّغْل",
+    "lesson": "2"
+  },
+  {
+    "front": "tomorrow",
+    "back_hint": "ghadan",
+    "back": "غَدًا",
+    "lesson": "2"
+  },
+  {
+    "front": "\"really!, truly\"",
+    "back_hint": "fi'lan",
+    "back": "فِعْلًا",
+    "lesson": "2"
+  },
+  {
+    "front": "admission",
+    "back_hint": "al qubul",
+    "back": "القُبُول",
+    "lesson": "2"
+  },
+  {
+    "front": "\"he talks about, he speaks, talks\"",
+    "back_hint": "yatakallam 'an",
+    "back": "يَتَكَلَّم عَن",
+    "lesson": "2"
+  },
+  {
+    "front": "I have",
+    "back_hint": "li - 'indi",
+    "back": "لِي - عِنْدِي",
+    "lesson": "2"
+  },
+  {
+    "front": "language",
+    "back_hint": "lughat",
+    "back": "لُغَة",
+    "lesson": "2"
+  },
+  {
+    "front": "evening",
+    "back_hint": "al masa'",
+    "back": "المَسَاء",
+    "lesson": "2"
+  },
+  {
+    "front": "night",
+    "back_hint": "al layl",
+    "back": "اللَّيْل",
+    "lesson": "2"
+  },
+  {
+    "front": "daytime",
+    "back_hint": "an nahar",
+    "back": "النَّهَار",
+    "lesson": "2"
+  },
+  {
+    "front": "only; lonely (adjective)",
+    "back_hint": "wahid / wahida",
+    "back": "وَحِيد / ة",
+    "lesson": "2"
+  },
+  {
+    "front": "employee",
+    "back_hint": "muwadhdhaf / muwadhdhafa",
+    "back": "مُوَظَّف / ة",
+    "lesson": "2"
+  },
+  {
+    "front": "today",
+    "back_hint": "al yawm",
+    "back": "اليَوم",
+    "lesson": "2"
+  },
+  {
+    "front": "history",
+    "back_hint": "at tarih",
+    "back": "التّاريخ",
+    "lesson": "3"
+  },
+  {
+    "front": "now",
+    "back_hint": "al'an",
+    "back": "الآن",
+    "lesson": "3"
+  },
+  {
+    "front": "congratulations!",
+    "back_hint": "mabruk!",
+    "back": "مَبروك",
+    "lesson": "3"
+  },
+  {
+    "front": "response to congratulations",
+    "back_hint": "baraka allahu fika",
+    "back": "بارَكَ اللهُ فيك",
+    "lesson": "3"
+  },
+  {
+    "front": "son",
+    "back_hint": "ibn ja abna'",
+    "back": "اِبن ج. أَبناء",
+    "lesson": "3"
+  },
+  {
+    "front": "\"cousin (male, paternal)\"",
+    "back_hint": "ibn 'amm ja abna' 'amm",
+    "back": "اِبن عَمّ ج. أَبناء عَمّ",
+    "lesson": "3"
+  },
+  {
+    "front": "grandfather",
+    "back_hint": "jadd ajdad",
+    "back": "جَدّ ج. أَجداد",
+    "lesson": "3"
+  },
+  {
+    "front": "grandmother",
+    "back_hint": "jadda jaddat",
+    "back": "جَدّة ج. جدّات",
+    "lesson": "3"
+  },
+  {
+    "front": "army",
+    "back_hint": "jaysh juwush",
+    "back": "جَيش ج. جُيوش",
+    "lesson": "3"
+  },
+  {
+    "front": "law (as a field of study)",
+    "back_hint": "al huquq",
+    "back": "الحُقوق",
+    "lesson": "3"
+  },
+  {
+    "front": "\"actually, in reality\"",
+    "back_hint": "fi al haqiqat",
+    "back": "في الحَقيقة",
+    "lesson": "3"
+  },
+  {
+    "front": "he teaches",
+    "back_hint": "yudarris",
+    "back": "يُدَرِّس",
+    "lesson": "3"
+  },
+  {
+    "front": "religion",
+    "back_hint": "ad din",
+    "back": "الدّين",
+    "lesson": "3"
+  },
+  {
+    "front": "letter",
+    "back_hint": "risala risail",
+    "back": "رِسالة ج. رِسائِل",
+    "lesson": "3"
+  },
+  {
+    "front": "husband",
+    "back_hint": "zawj azwaj",
+    "back": "زَوج ج. أَزواج",
+    "lesson": "3"
+  },
+  {
+    "front": "wife",
+    "back_hint": "zawja zawjat",
+    "back": "زَوجة ج. زَوجات",
+    "lesson": "3"
+  },
+  {
+    "front": "married (adj.)",
+    "back_hint": "mutazawwij/a -un/in",
+    "back": "مُتَزَوِّج/ة ج. -ون/ين",
+    "lesson": "3"
+  },
+  {
+    "front": "picture",
+    "back_hint": "sura suwar",
+    "back": "صورة ج. صُوَر",
+    "lesson": "3"
+  },
+  {
+    "front": "officer",
+    "back_hint": "dabit dubbat",
+    "back": "ضابِط ج. ضُباط",
+    "lesson": "3"
+  },
+  {
+    "front": "medicine (the profession)",
+    "back_hint": "at tibb",
+    "back": "الطِّبّ",
+    "lesson": "3"
+  },
+  {
+    "front": "I know",
+    "back_hint": "a'rif",
+    "back": "أعرِف",
+    "lesson": "3"
+  },
+  {
+    "front": "science",
+    "back_hint": "ilm 'ulum",
+    "back": "عِلم ج. عُلوم",
+    "lesson": "3"
+  },
+  {
+    "front": "political science",
+    "back_hint": "al 'ulum as siyasiyya",
+    "back": "العُلوم السِّياسِيَّة",
+    "lesson": "3"
+  },
+  {
+    "front": "anthropology",
+    "back_hint": "ilm al insaan",
+    "back": "عِلم الإنْسان",
+    "lesson": "3"
+  },
+  {
+    "front": "psychology",
+    "back_hint": "ilm an nafs",
+    "back": "عِلم النَّفس",
+    "lesson": "3"
+  },
+  {
+    "front": "paternal uncle",
+    "back_hint": "'amm 'amaam",
+    "back": "عَمّ ج. أَعْمام",
+    "lesson": "3"
+  },
+  {
+    "front": "(extended) family",
+    "back_hint": "'a'ila 'a'ilat",
+    "back": "عائِلة ج. عائِلات",
+    "lesson": "3"
+  },
+  {
+    "front": "relative",
+    "back_hint": "qarib 'aqarib",
+    "back": "قَريب ج. أقارِب",
+    "lesson": "3"
+  },
+  {
+    "front": "\"college, school (in a university)\"",
+    "back_hint": "kulliyya kulliyyat",
+    "back": "كُلِّيّة ج. كُلِّيّات",
+    "lesson": "3"
+  },
+  {
+    "front": "how many?",
+    "back_hint": "kam?",
+    "back": "كَم؟",
+    "lesson": "3"
+  },
+  {
+    "front": "engineering",
+    "back_hint": "al handasa",
+    "back": "الهَندَسة",
+    "lesson": "3"
+  }
+]

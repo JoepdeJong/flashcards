@@ -1,0 +1,195 @@
+[
+    {
+        "lessonId": "4",
+        "title": "Lesson 4",
+        "exercises": [
+  {
+    "front": "he eats",
+    "back_hint": "ya'kul",
+    "back": "يَأْكُل",
+    "lesson": "4"
+  },
+  {
+    "front": "yesterday",
+    "back_hint": "ams",
+    "back": "أَمْس",
+    "lesson": "4"
+  },
+  {
+    "front": "first",
+    "back_hint": "awwal",
+    "back": "أَوَّل",
+    "lesson": "4"
+  },
+  {
+    "front": "\"primary, elementary\"",
+    "back_hint": "ibtidayiyy / ibtidayiyya",
+    "back": "اِبْتِدائِيّ / اِبْتِدائِيّة",
+    "lesson": "4"
+  },
+  {
+    "front": "I memorize",
+    "back_hint": "ahfadh",
+    "back": "أَحْفَظ",
+    "lesson": "4"
+  },
+  {
+    "front": "\"sweets, desserts\"",
+    "back_hint": "halawiyat / huluw",
+    "back": "حَلَوِيّات، حُلو",
+    "lesson": "4"
+  },
+  {
+    "front": "vegetables",
+    "back_hint": "khudhaar",
+    "back": "خُضار",
+    "lesson": "4"
+  },
+  {
+    "front": "school",
+    "back_hint": "madrasa / madaris",
+    "back": "مَدْرَسة / مَدارِس",
+    "lesson": "4"
+  },
+  {
+    "front": "I remember",
+    "back_hint": "atadhakkar",
+    "back": "أَتَذَكَّر",
+    "lesson": "4"
+  },
+  {
+    "front": "\"classmate, colleague (masc.)\"",
+    "back_hint": "zamil zumalaa'",
+    "back": "زَميل ج زُمَلاء",
+    "lesson": "4"
+  },
+  {
+    "front": "\"classmate, colleague (fem.)\"",
+    "back_hint": "zamila / zamilat",
+    "back": "زَميلة / زَميلات",
+    "lesson": "4"
+  },
+  {
+    "front": "\"travelling from, to (noun)\"",
+    "back_hint": "as safar min / ila",
+    "back": "السَّفَر مِن، إلى",
+    "lesson": "4"
+  },
+  {
+    "front": "I travel to",
+    "back_hint": "usafir ila",
+    "back": "أُسافِر إلى",
+    "lesson": "4"
+  },
+  {
+    "front": "salad",
+    "back_hint": "salata / salatat",
+    "back": "سَلَطة / سَلَطات",
+    "lesson": "4"
+  },
+  {
+    "front": "he listens to",
+    "back_hint": "yastami' ila",
+    "back": "يَسْتَمِع إلى",
+    "lesson": "4"
+  },
+  {
+    "front": "fish",
+    "back_hint": "samak",
+    "back": "سَمَك",
+    "lesson": "4"
+  },
+  {
+    "front": "soup",
+    "back_hint": "shurba",
+    "back": "شُورْبة",
+    "lesson": "4"
+  },
+  {
+    "front": "friend (masc.)",
+    "back_hint": "sadiq 'asdiqa'",
+    "back": "صَديق ج أَصْدِقاء",
+    "lesson": "4"
+  },
+  {
+    "front": "friend (fem.)",
+    "back_hint": "sadiqa sadiqat",
+    "back": "صَديقة ج صَديقات",
+    "lesson": "4"
+  },
+  {
+    "front": "childhood",
+    "back_hint": "at tufuula",
+    "back": "الطُّفولة",
+    "lesson": "4"
+  },
+  {
+    "front": "restaurant",
+    "back_hint": "mat'am / mataa'im",
+    "back": "مَطْعَم / مَطاعِم",
+    "lesson": "4"
+  },
+  {
+    "front": "\"individual, person\"",
+    "back_hint": "fard / 'afraad",
+    "back": "فَرْد / أَفْراد",
+    "lesson": "4"
+  },
+  {
+    "front": "fruit",
+    "back_hint": "fakiha / fawaakih",
+    "back": "فاكِهة / فَواكِه",
+    "lesson": "4"
+  },
+  {
+    "front": "before (with a noun or participle)",
+    "back_hint": "qabla + ism",
+    "back": "قَبْلَ + اسم",
+    "lesson": "4"
+  },
+  {
+    "front": "he reads",
+    "back_hint": "yaqra'",
+    "back": "يَقرأ",
+    "lesson": "4"
+  },
+  {
+    "front": "he says",
+    "back_hint": "yaqul",
+    "back": "يَقول",
+    "lesson": "4"
+  },
+  {
+    "front": "he writes",
+    "back_hint": "yaktub",
+    "back": "يَكْتُب",
+    "lesson": "4"
+  },
+  {
+    "front": "all of the ... (with a following plural)",
+    "back_hint": "kull + al jam'",
+    "back": "كُلّ + الجمع",
+    "lesson": "4"
+  },
+  {
+    "front": "he was",
+    "back_hint": "kaana",
+    "back": "كانَ",
+    "lesson": "4"
+  },
+  {
+    "front": "I was",
+    "back_hint": "kuntu",
+    "back": "كُنْتُ",
+    "lesson": "4"
+  },
+  {
+    "front": "meat",
+    "back_hint": "lahm",
+    "back": "لَحم",
+    "lesson": "4"
+  }
+]
+  
+    }
+]

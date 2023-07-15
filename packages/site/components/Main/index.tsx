@@ -5,9 +5,9 @@ import Flashcard from '../Flashcard';
 import { Controls } from '../Controls';
 
 import styles from './Main.module.scss'
-import { Exercise } from '@/types/types';
+import { ExerciseType } from '@flashcards/core/types/LessonType';
 
-export default function Main({ data }: { data: Exercise[] }) {
+export default function Main({ data }: { data: ExerciseType[] }) {
     const [active, setActive] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [showHint, setShowHint] = useState(false);

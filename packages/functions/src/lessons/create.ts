@@ -7,6 +7,8 @@ import { LessonType } from "@flashcards/core/types/LessonType"
 import { DynamoDB } from "aws-sdk";
 import { Table } from "sst/node/table";
 
+import { v4 as uuidv4 } from 'uuid';
+
 const dynamoDb = new DynamoDB.DocumentClient();
 
 export const main = ApiHandler(async (_evt) => {
@@ -24,7 +26,7 @@ export const main = ApiHandler(async (_evt) => {
   const courseId = usePathParam("courseId");
 
   // Get post data from request body
-  const lessons: LessonType[] = useJsonBody();
+  let lessons: LessonType[] = useJsonBody();
 
   // courses should be an array
   // each item should have an courseId, userId and title
@@ -47,6 +49,18 @@ export const main = ApiHandler(async (_evt) => {
       body: `Lessons is not a valid array`,
     };
   }
+
+  // Generate exerciseId if not present
+  lessons.forEach((lesson) => {
+    if (!lesson.exercises) {
+      lesson.exercises = [];
+    }
+    lesson.exercises.forEach((exercise) => {
+      if (!exercise.exerciseId) {
+        exercise.exerciseId = uuidv4();
+      }
+    });
+  });
 
   // Validate exercises
   const isValidExercises = lessons.every(

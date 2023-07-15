@@ -1,13 +1,13 @@
 "use client";
 // Flashcard Component, consisting of a front and a back side. Possibility to flip the card.
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import styles from './Flashcard.module.scss'
-import { Exercise, Word } from "@/types/types";
+import { ExerciseType } from "@flashcards/core/types/LessonType";
 
 type FlashcardProps = {
-    exercise: Exercise;
+    exercise: ExerciseType;
     isFlipped?: boolean;
     isActive?: boolean;
     onClick?: () => void;
@@ -33,28 +33,27 @@ export default function Flashcard(props: FlashcardProps) {
     }
 
     return (
-        <div className={`${styles.flashcard} ${props.isActive ? styles.active : ''} ${styles[props.exercise.status]}`} onClick={onClickCard} tabIndex={0} ref={cardRef}>
+        <div className={`${styles.flashcard} ${props.isActive ? styles.active : ''} ${styles[props.exercise.status || "unlearned"]}`} onClick={onClickCard} tabIndex={0} ref={cardRef}>
             <div className={`${styles.card} ${props.isFlipped ? styles.flipped : ''}`}>
                 <div className={`${styles.front}`}>
-                    <Side words={props.exercise.front} showHint={props.showHint} />
+                    <Side text={props.exercise.front} hint={props.exercise.front_hint} showHint={props.showHint} />
                 </div>
                 <div className={`${styles.back}`}>
-                    <Side words={props.exercise.back}  showHint={props.showHint} />
+                    <Side text={props.exercise.back} hint={props.exercise.back_hint} showHint={props.showHint} />
                 </div>
             </div>
         </div>
     );
 }
 
-const Side = ({ words, showHint }: { words: Word[], showHint?: boolean }) => {
+
+const Side = ({ text, hint, showHint }: { text: string, hint?: string, showHint?: boolean }) => {
     return (
         <div className={styles.side}>
-            {words.map((word, i) => (
-                <div key={i} className={styles.word}>
-                    {word.word}
-                    {showHint && word.hint && <span className={styles.hint}>{word.hint}</span>}
-                </div>
-            ))}
+            <div className={styles.word}>
+                {text}
+                {showHint && hint && <span className={styles.hint}>{hint}</span>}
+            </div>
         </div>
     );
 }

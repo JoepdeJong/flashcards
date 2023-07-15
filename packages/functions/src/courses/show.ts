@@ -9,15 +9,15 @@ import { LessonType } from "@flashcards/core/types/LessonType";
 const dynamoDb = new DynamoDB.DocumentClient();
 
 export const main = ApiHandler(async (_evt) => {
-  // Check if user is authenticated
-  const isAuthenticated = checkAuthenticationToken();
+  // // Check if user is authenticated
+  // const isAuthenticated = checkAuthenticationToken();
 
-  if (!isAuthenticated) {
-    return {
-      statusCode: 401,
-      body: `Unauthorized`,
-    };
-  }
+  // if (!isAuthenticated) {
+  //   return {
+  //     statusCode: 401,
+  //     body: `Unauthorized`,
+  //   };
+  // }
 
   // Get path parameters
   const courseId = usePathParam("courseId");
@@ -33,8 +33,6 @@ export const main = ApiHandler(async (_evt) => {
   };
   
   const res = await dynamoDb.scan(getCourseParams).promise();
-
-  console.log(res);
 
   if (!res || !res.Items || res.Items.length === 0) {
     return {

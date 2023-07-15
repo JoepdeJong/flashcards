@@ -11,5 +11,6 @@ export type ExerciseType = {
     front_hint?: string;
     back: string;
     back_hint?: string;
+    status?: 'unlearned' | 'learning' | 'learned';
 }
 
