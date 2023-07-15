@@ -19,13 +19,12 @@ export async function generateStaticParams() {
 
   let courseLessons: {courseId: string, lessonId: string}[] = [];
 
-  courses.forEach((course) => {
-    if (course.lessons) {
-      course.lessons.forEach((lesson) => {
-        courseLessons.push({courseId: course.courseId, lessonId: lesson.lessonId})
-      })
-    }
-  })
+  await Promise.all(courses.map(async (course) => {
+    const courseData = await fetcher(process.env.NEXT_PUBLIC_API_URL + `/courses/${course.courseId}`) as CourseType;
+    courseData.lessons.forEach((lesson) => {
+      courseLessons.push({ courseId: course.courseId, lessonId: lesson.lessonId });
+    });
+  }));
 
   return courseLessons;
 }
