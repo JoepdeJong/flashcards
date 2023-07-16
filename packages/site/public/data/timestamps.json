@@ -1,0 +1,69 @@
+[
+    {
+        "lessonId": "timestamps",
+        "title": "Timestamps",
+        "exercises": [
+    {
+      "front": "Century",
+      "back": "قَرْنٌ / قُرُونٌ",
+      "back_hint": "Qarn / Qurūn"
+    },
+    {
+      "front": "Year",
+      "back": "سَنَةٌ / سَنَوَاتٌ",
+      "back_hint": "Sanah / Sanawāt"
+    },
+    {
+      "front": "Month",
+      "back": "شَهْرٌ / أَشْهُرٌ",
+      "back_hint": "Shahr / Ashhur"
+    },
+    {
+      "front": "Week",
+      "back": "أُسْبُوعٌ / أُسْبُوعَاتٌ",
+      "back_hint": "Usbu' / Usubu'āt"
+    },
+    {
+      "front": "Day",
+      "back": "يَوْمٌ / أَيَّامٌ",
+      "back_hint": "Yawm / Ayyām"
+    },
+    {
+      "front": "Hour",
+      "back": "سَاعَةٌ / سَاعَاتٌ",
+      "back_hint": "Sā'ah / Sā'āt"
+    },
+    {
+      "front": "Third",
+      "back": "ثُلُثٌ / ثُلُثَاتٌ",
+      "back_hint": "Thulth / Thulūth"
+    },
+    {
+      "front": "Quarter",
+      "back": "رُبْعٌ / أَرْبَاعٌ",
+      "back_hint": "Rub' / Arbā'"
+    },
+    {
+      "front": "Minute",
+      "back": "دَقِيقَةٌ / دَقَائِقٌ",
+      "back_hint": "Daqīqah / Daqā'iq"
+    },
+    {
+      "front": "Second",
+      "back": "ثَانِيَةٌ / ثَوَانٍ",
+      "back_hint": "Thāniyah / Thāniyāt"
+    },
+    {
+      "front": "Moment",
+      "back": "لَحْظَةٌ / لَحَظَاتٌ",
+      "back_hint": "Lahzah / Lahzāt"
+    },
+    {
+      "front": "During",
+      "back": "خِلَالَ",
+      "back_hint": "Khilāl"
+    }
+  ]
+  
+    }
+]

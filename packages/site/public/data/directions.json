@@ -1,0 +1,83 @@
+[
+    {
+        "lessonId": "directions",
+        "title": "Directions",
+        "exercises": [
+    {
+      "front": "North",
+      "back_hint": "Al-Shamāl",
+      "back": "الشَمَالُ"
+    },
+    {
+      "front": "East",
+      "back_hint": "Al-Sharq",
+      "back": "الشَّرْقُ"
+    },
+    {
+      "front": "South",
+      "back_hint": "Al-Janūb",
+      "back": "الْجَنُوبُ"
+    },
+    {
+      "front": "West",
+      "back_hint": "Al-Gharb",
+      "back": "الْغَرْبُ"
+    },
+    {
+      "front": "Up",
+      "back_hint": "Fawq",
+      "back": "فَوْقَ"
+    },
+    {
+      "front": "Under",
+      "back_hint": "Taht",
+      "back": "تَحْتَ"
+    },
+    {
+      "front": "Next to",
+      "back_hint": "Bijanibi",
+      "back": "بِجَانِبِ"
+    },
+    {
+      "front": "Inside",
+      "back_hint": "Fi ad-dākhil",
+      "back": "فِي الدَّاخِلِ"
+    },
+    {
+      "front": "Outside",
+      "back_hint": "Kharij",
+      "back": "خَارِجٌ"
+    },
+    {
+      "front": "On",
+      "back_hint": "'Ala",
+      "back": "عَلَى"
+    },
+    {
+      "front": "In front",
+      "back_hint": "Amāma",
+      "back": "أَمَامَ"
+    },
+    {
+      "front": "Behind",
+      "back_hint": "Wara'",
+      "back": "وَرَاءَ"
+    },
+    {
+      "front": "Between",
+      "back_hint": "Bayn",
+      "back": "بَيْنَ"
+    },
+    {
+      "front": "Left",
+      "back_hint": "Yasar",
+      "back": "يَسَارٌ"
+    },
+    {
+      "front": "Right",
+      "back_hint": "Yameen",
+      "back": "يَمِينٌ"
+    }
+  ] 
+    }
+]

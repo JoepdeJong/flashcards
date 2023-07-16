@@ -1,0 +1,117 @@
+[
+    {
+        "lessonId": "Basic Verbs",
+        "title": "Basic Verbs",
+        "exercises": [
+  {
+    "front": "to go",
+    "back": "ذَهَبَ || يَذْهَبُ",
+    "back_hint": "dhahaba || yadhhabu"
+  },
+  {
+    "front": "to want",
+    "back": "أرَادَ || يُرِيدُ",
+    "back_hint": "ʾaraada || yuriidu"
+  },
+  {
+    "front": "to eat",
+    "back": "أَكَلَ || يَأْكُلُ",
+    "back_hint": "ʾakala || yaʾkulu"
+  },
+  {
+    "front": "to hear / to listen",
+    "back": "إسْتَمَعَ || أَسْتَمِعُ",
+    "back_hint": "istamaʿa || ʾastamiʿu"
+  },
+  {
+    "front": "to read",
+    "back": "قَرَأَ || يَقْرَأُ",
+    "back_hint": "qaraʾa || yaqraʾu"
+  },
+  {
+    "front": "to teach",
+    "back": "دَرَّسَ || يُدَرِّسُ",
+    "back_hint": "darrasa || yudarrisu"
+  },
+  {
+    "front": "to sleep",
+    "back": "نَامَ || يَنَامُ",
+    "back_hint": "naama || yanaamu"
+  },
+  {
+    "front": "to wake up",
+    "back": "إستيقَظَ || أَسْتَيْقِظُ",
+    "back_hint": "istayqaẓa || ʾastayqiẓu"
+  },
+  {
+    "front": "to run",
+    "back": "رَكَضَ || يَرْكُضُ",
+    "back_hint": "rakaDa || yarkuDu"
+  },
+  {
+    "front": "to study",
+    "back": "ذَاكَرَ || يُذَاكِرُ",
+    "back_hint": "dhaakara || yudhaakiru"
+  },
+  {
+    "front": "to watch",
+    "back": "شَاهَدَ || يُشَاهِدُ",
+    "back_hint": "shaahada || yushaahidu"
+  },
+  {
+    "front": "to work / to make",
+    "back": "عَمِلَ || يَعْمَلُ",
+    "back_hint": "ʿamila || yaʿmalu"
+  },
+  {
+    "front": "to remember",
+    "back": "تَذَكَّرَ || يَتَذَكَّرُ",
+    "back_hint": "tadhakkara || yatadhakkaru"
+  },
+  {
+    "front": "to write",
+    "back": "كَتَبَ || أَكْتُبُ",
+    "back_hint": "kataba || ʾaktubu"
+  },
+  {
+    "front": "to travel",
+    "back": "سَافَرَ || يُسَافِرُ",
+    "back_hint": "saafara || yusaafiru"
+  },
+  {
+    "front": "to drink",
+    "back": "شَرِبَ || يَشْرَبُ",
+    "back_hint": "shariba || yashrabu"
+  },
+  {
+    "front": "to memorize",
+    "back": "حَفِظَ || يَحْفَظُ",
+    "back_hint": "HafiZa || yaHfaZu"
+  },
+  {
+    "front": "to ask",
+    "back": "سَأَلَ || يَسْأَلُ",
+    "back_hint": "saʾala || yasʾalu"
+  },
+  {
+    "front": "to take",
+    "back": "أَخَذَ || يَأْخُذُ",
+    "back_hint": "ʾakhadha || yaʾkhudhu"
+  },
+  {
+    "front": "to understand",
+    "back": "فَهِمَ || يَفْهَمُ",
+    "back_hint": "fahima || yafhamu"
+  },
+  {
+    "front": "to live",
+    "back": "سَكَنَ || يَسْكُنُ",
+    "back_hint": "sakana || yaskunu"
+  },
+  {
+    "front": "to stay",
+    "back": "بَقِيَ || يَبْقَى",
+    "back_hint": "baqiya || yabqaa"
+  }
+]   }
+]
